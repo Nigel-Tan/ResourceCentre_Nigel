@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class ResourceCentre {
-
+//version 1
 	public static void main(String[] args) {
 
 		ArrayList<Camcorder> camcorderList = new ArrayList<Camcorder>();
@@ -158,6 +158,18 @@ public class ResourceCentre {
 	          chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs()); 
 	    }
 	      return output ;
+	      
+//		String output = "";
+//		// write your code here
+//		for (int i = 0; i < chromebookList.size(); i++) {
+//
+//			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", chromebookList.get(i).getAssetTag(),
+//					chromebookList.get(i).getDescription(), 
+//					ResourceCentre.showAvailability(chromebookList.get(i).getIsAvailable()),
+//					chromebookList.get(i).getDueDate(),chromebookList.get(i).getOs());
+//		}
+//		return output;
+
 	}
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
@@ -184,6 +196,10 @@ public class ResourceCentre {
 	public static Chromebook inputChromebook() {	
 		Chromebook cb =null;
 		// write your code here
+		String tag = Helper.readString("Enter asset tag > ");
+		String description = Helper.readString("Enter description > ");
+		String os = Helper.readString("Enter OS");
+		cb = new Chromebook(tag, description,os);
 
 		return cb;
 		
