@@ -330,7 +330,7 @@ public class ResourceCentre {
 	// ================================= Option 4 Return an item (CRUD -
 	// Update)=================================
 	public static boolean doReturnCamcorder(ArrayList<Camcorder> camcorderList, String tag) {
-=======
+// =======
 		
 	
 	
@@ -375,7 +375,7 @@ public class ResourceCentre {
 				chromebookList.get(i).setDueDate("");
 				isReturned = true;
 
-=======
+// =======
 
 		for (int i = 0; i < chromebookList.size(); i++) {
 			if (tag.equalsIgnoreCase(chromebookList.get(i).getAssetTag())
@@ -390,7 +390,7 @@ public class ResourceCentre {
 		return isReturned;
 <<<<<<< HEAD
 
-=======
+// =======
 	}
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
@@ -420,6 +420,6 @@ public class ResourceCentre {
 		}
 	}
 
-=======
+// =======
 >>>>>>> branch 'master' of https://github.com/21023028-NigelTanMengYuan/ResourceCentre_Nigel.git
 }
