@@ -75,6 +75,7 @@ public class ResourceCentreTest {
 		ResourceCentre.addChromebook(chromebookList, cb3);
 		assertEquals("Test that Chromebook arraylist size is 3?", 3, chromebookList.size());
 		assertSame("Test that Chromebook is added same as 3rd item of the list?", cb3, chromebookList.get(2));
+		assertNull("hi",chromebookList);
 	}
 	
 	@Test
